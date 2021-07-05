@@ -26,6 +26,7 @@ preview
     <span class="label">Seconds</span>
   </div>
 </div>
+
 Плагин это класс CountdownTimer, экземпляр которого создает новый таймер с настройками.
 
 new CountdownTimer({
@@ -38,6 +39,7 @@ new CountdownTimer({
  * Оставшиеся дни: делим значение UTC на 1000 * 60 * 60 * 24, количество
  * миллисекунд в одном дне (миллисекунды * секунды * минуты * часы)
  */
+
 const days = Math.floor(time / (1000 * 60 * 60 * 24));
 
 /*
