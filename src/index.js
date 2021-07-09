@@ -18,6 +18,7 @@ class CountdownTimer {
                 const { days, hours, mins, secs } = this.getTimeComponents(time);
                 this.updateClockface(this.getTimeComponents(time));
             } else {
+                clearInterval();
                 document.getElementById("timer-1").innerHTML = "EXPIRED!";
             }            
         }, 1000);
